@@ -17,15 +17,18 @@
     <!-- CSS -->
     <link href="css/style_dropdown.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-</head>
+  </head>
 
   <body>
-  <!-- Navigation -->
-    <nav id="cbp-hrmenu" class="cbp-hrmenu">
+    <!-- Navigation -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<nav id="cbp-hrmenu" class="cbp-hrmenu">
+
         <ul>
             <li>
-                <!-- <h4 href="#">Kishani Seneviratne</h4> -->
-                <a href="#">HOME</a>
                 <a href="#">WORK</a>
                 <div class="cbp-hrsub">
                     <div class="cbp-hrsub-inner">
@@ -43,15 +46,17 @@
 
                             </ul>
                         </div>
+                        <div>
+                            <!-- ... -->
+                        </div>
                     </div><!-- /cbp-hrsub-inner -->
                 </div><!-- /cbp-hrsub -->
             </li>
-            <li><a href="contact.html">ABOUT</a></li>
-            <!-- <li><a href="images/KSeneviratne_0418.pdf" download>RESUME</a></li> -->
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="images/KSeneviratne_0418.pdf" target="_blank">RESUME</a></li>
+
         </ul>
     </nav>
-
-    <!-- Script to make Nav work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
     $(function() {
@@ -59,17 +64,17 @@
     });
     var cbpHorizontalMenu = (function() {
 
-    var $listItems = $( '#cbp-hrmenu > ul > li' ),
+var $listItems = $( '#cbp-hrmenu > ul > li' ),
     $menuItems = $listItems.children( 'a' ),
     $body = $( 'body' ),
     current = -1;
 
-    function init() {
+function init() {
     $menuItems.on( 'click', open );
     $listItems.on( 'click', function( event ) { event.stopPropagation(); } );
-    }
+}
 
-    function open( event ) {
+function open( event ) {
 
     if( current !== -1 ) {
         $listItems.eq( current ).removeClass( 'cbp-hropen' );
@@ -90,79 +95,37 @@
 
     return false;
 
-    }
+}
 
-    function close( event ) {
+function close( event ) {
     $listItems.eq( current ).removeClass( 'cbp-hropen' );
     current = -1;
-    }
+}
 
-    return { init : init };
+return { init : init };
 
-    })();
+})();
     </script>
 
-<!-- Row 1 -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 portContent">
-          <a href="contact.html"><img src="images/img_cvr_evyjo.jpg">
-          </a>
-          <h2 class="card-title">EVY JO & CO</h2>
-          <h6 class="card-subtitle">Responsive Site</h6>
+<!-- Page title -->
+    <div class="header-container">
+        <div class="header">
+        <h1>PROCESS PAGE PLACEHOLDER</h1>
+        <img src="images/ddiamond.png">
         </div>
+    </div>
+  <!-- Footer -->
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h2 class="lead">Kishani Seneviratne</h2><h2>323 394 9116</h2>
+            <hr class="my-4">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Download Resume</a>
+            <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fab fa-linkedin"></i>  Connect via LinkedIn</a>
+            <a class="btn btn-primary btn-lg" href="mailto:kishmeufool@gmail.com" role="button">Contact</a>
 
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 portContent">
-          <img src ="images/img_cvr_joe_juice.jpg"/>
-          <h2 class="card-title">JOE & THE JUICE</h2>
-          <h6 class="card-subtitle">Mobile App</h6>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 portContent">
-          <img src ="images/img_cvr_zocdoc.jpg"/>
-          <h2 class="card-title">ZOCDOC</h2>
-          <h6 class="card-subtitle">Skin Cancer Prevention Infographic</h6>
         </div>
       </div>
-    </div>
 
+  </body>
 
-<!-- Row 2 -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 portContent">
-          <img src ="images/img_cvr_amgen.jpg"/>
-          <h2 class="card-title">AMGEN NEULASTA</h2>
-          <h6 class="card-subtitle">Mobile App</h6>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 portContent">
-          <img src ="images/img_cvr_ace.jpg"/>
-          <h2 class="card-title">ACE</h2>
-          <h6 class="card-subtitle">Website</h6>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 portContent">
-          <img src ="images/img_cvr_abilify.jpg"/>
-          <h2 class="card-title">ABILIFY</h2>
-          <h6 class="card-subtitle">TV Spot</h6>
-        </div>
-      </div>
-    </div>
-
-
-<!-- Footer -->
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h2 class="lead">Kishani Seneviratne</h2><h2>323 394 9116</h2>
-          <hr class="my-4">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Download Resume</a>
-          <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fab fa-linkedin"></i>  Connect via LinkedIn</a>
-          <a class="btn btn-primary btn-lg" href="mailto:kishmeufool@gmail.com" role="button">Contact</a>
-
-      </div>
-    </div>
-
-</body>
-
-</html>
+  </html>
