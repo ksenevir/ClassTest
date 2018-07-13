@@ -121,6 +121,7 @@ a:-webkit-any-link {
 	width: 100%;
 	margin-top: 2em;
 	border-bottom: 3px solid #f09090;
+	z-index:1001;
 }
 
 /* general ul style */
@@ -173,18 +174,30 @@ a:-webkit-any-link {
 	position: absolute;
 	background: #f09090;
 	width: 300px;
+	z-index: 1;
 	left: 0;
 }
-
+.cbp-hrsub2 {
+	display: none;
+	position: absolute;
+	background: #f09090;
+	width: 210px;
+	z-index: 1;
+	left: 0;
+}
 .cbp-hropen .cbp-hrsub {
 	display: block;
 	padding-bottom: 3em;
 }
 
 .cbp-hrmenu .cbp-hrsub-inner > div {
-	width: 55%;
+	width: 100%;
 	float: left;
 	padding: 0 2em 0;
+}
+.active {
+	background: #f09090;
+	color: white !important;
 }
 
 .cbp-hrmenu .cbp-hrsub-inner:before,
